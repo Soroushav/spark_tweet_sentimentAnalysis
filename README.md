@@ -52,3 +52,21 @@ This scale makes it suitable for a Big Data approach with PySpark.
 ```bash
 git clone <your-repo-url>
 cd <project-folder>
+```
+
+### 2. Start the Docker environment
+```bash
+docker compose up -d
+```
+
+### 3. Open Jupyter Notebook
+
+Check the container logs:
+```bash
+docker compose logs pyspark
+```
+
+Open the Jupyter Lab URL with the token printed in the logs.
+### 4. Run the notebooks
+Load the dataset (from database/ directory)
+Follow the preprocessing and modeling pipeline
