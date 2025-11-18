@@ -8,10 +8,9 @@ To ensure reproducibility and an isolated environment, the entire workflow is **
 
 The main phases of the project include:
 - Large-scale preprocessing using PySpark DataFrames
-- Feature extraction (TF-IDF / HashingTF)
-- Training multiple ML models (SVM, Logistic Regression, Naive Bayes, etc.)
+- Feature extraction (HashingTF)
+- Training multiple ML models (SVM, Logistic Regression)
 - Evaluating model performance with Spark MLlib
-- Optional comparison with BERT embeddings in a separate Colab notebook
 
 ---
 
