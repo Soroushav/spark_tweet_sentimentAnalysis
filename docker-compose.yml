@@ -1,0 +1,13 @@
+services:
+  pyspark:
+    image: jupyter/pyspark-notebook:latest
+    container_name: pyspark
+    ports:
+      - "8888:8888"
+      - "4041:4040"   # we'll fix this next
+    volumes:
+      - ./work:/home/jovyan/work
+      - ./database:/home/jovyan/database
+    environment:
+      JUPYTER_ENABLE_LAB: "yes"
+    restart: unless-stopped
